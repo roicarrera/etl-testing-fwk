@@ -27,7 +27,6 @@ class TestSNSNotifications:
         assert response['StatusCode'] == 200, f"Lambda execution failed with status code {response['StatusCode']}"
 
     # TODO: Exercise 3 - Add Allure decorators to the test class
-    @pytest.mark.skip(reason="Remove this line on exercise 3")
     @allure.feature("Lambda Function")
     @allure.title("New title for the test case")
     @allure.story("Raw Clean Lambda Execution")
